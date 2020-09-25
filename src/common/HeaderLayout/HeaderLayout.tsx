@@ -2,8 +2,10 @@ import React from 'react';
 import { Layout, Row, Col } from 'antd';
 import logo from '../../logo.svg';
 
+const { Header } = Layout;
+
 const HeaderLayout = () => (
-  <Layout>
+  <Header>
     <Row justify="space-between">
       <Col>
         <Row>
@@ -11,7 +13,7 @@ const HeaderLayout = () => (
         </Row>
       </Col>
     </Row>
-  </Layout>
+  </Header>
 
 );
 
