@@ -1,12 +1,6 @@
-import React from 'react';
-import { Button } from 'antd';
+import React from "react";
+import PageLayout from "../common";
 
-const Home = () => (
-  <div>
-    <Button type="primary">
-      Button
-    </Button>
-  </div>
-);
+const Home = () => <PageLayout>fdsfds</PageLayout>;
 
 export default Home;
