@@ -1,20 +1,19 @@
 import React from 'react';
-import { Layout, Row, Col } from 'antd';
+import {
+  PageHeader, Row, Col,
+} from 'antd';
 import logo from '../../logo.svg';
 
-const { Header } = Layout;
-
 const HeaderLayout = () => (
-  <Header>
+  <PageHeader title="title">
     <Row justify="space-between">
       <Col>
         <Row>
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" width="100" height="100" />
         </Row>
       </Col>
     </Row>
-  </Header>
-
+  </PageHeader>
 );
 
 export default HeaderLayout;
