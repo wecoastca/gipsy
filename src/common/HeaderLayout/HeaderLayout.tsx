@@ -1,19 +1,28 @@
 import React from 'react';
 import {
-  PageHeader, Row, Col,
+  PageHeader, Row, Col, Layout, Button,
 } from 'antd';
-import logo from '../../logo.svg';
+import FireOutlined from '@ant-design/icons';
+import Paragraph from 'antd/lib/typography/Paragraph';
+import style from './HeaderLayout.module.css';
+
+const { Header } = Layout;
 
 const HeaderLayout = () => (
-  <PageHeader title="title">
-    <Row justify="space-between">
-      <Col>
-        <Row>
-          <img src={logo} alt="Logo" width="100" height="100" />
-        </Row>
-      </Col>
-    </Row>
-  </PageHeader>
+  <>
+    <Header className={style.pageHeader}>
+      <Row justify="space-between" className={style.row}>
+        <Col>
+          <Row>
+            <FireOutlined style={{ color: '#66788a' }} />
+            <Paragraph>
+              pupa and lupa
+            </Paragraph>
+          </Row>
+        </Col>
+      </Row>
+    </Header>
+  </>
 );
 
 export default HeaderLayout;
